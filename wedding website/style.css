@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c9a5a5;
+}
+
+.countdown-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #030303;
+  color: aliceblue;
+  
+}
+
+.countdown1 {
+  padding-top: 300px;
+  opacity: 1;
+  font-size: 25px;
+}
+
+.countdown-container h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+
+}
+
+.countdown-container.countdown {
+  font-size: 44px;
+  margin-bottom: 10px;
+
+}
+
+.rain-container {
+  position: relative;
+  height: 100vh;
+}
+
+.rain {
+  position: absolute;
+  top: -150px;
+  width: 50px;
+  height: 50px;
+  background-image: url('flower.png');
+  background-size: cover;
+  animation: raindrop 2s linear infinite;
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+
